@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nobel Laureates</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="heading">Nobel prize winners for the last 100 years</h1>
+      <div class="filterData">
+        <div class="filter-container">
+          <div class="category">
+            <label for="category">Choose a category:</label>
+            <select class="drop-down" name="category" id="category">
+              <option value="chemistry">Chemistry</option>
+              <option value="economics">Economics</option>
+              <option value="literature">Literature</option>
+              <option value="peace">Peace</option>
+              <option value="physics">Physics</option>
+              <option value="medicine">Medicine</option>
+            </select>
+          </div>
+
+          <div class="year">
+            <label for="year">Choose a year:</label>
+            <select class="drop-down" name="year" id="year"></select>
+          </div>
+
+          <button class="filter-btn" role="button" onclick="displayWinners()">
+            Filter Data
+          </button>
+          <button class="filter-btn" role="button" onclick="displayFullData()">
+            Show All Data
+          </button>
+        </div>
+
+        <div id="display-data"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
